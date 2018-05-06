@@ -1,8 +1,100 @@
-html,
-body {
-  width: 100%;
-  height: 100%; }
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+* {
+  font-family: 'Spoqa Han Sans'; }
 
-#root {
-  height: inherit;
-  width: inherit; }
+::-webkit-input-placeholder {
+  /* 크롬 4–56 */
+  color: white;
+  opacity: 0.7; }
+
+:-moz-placeholder {
+  /* 파이어폭스 4–18 */
+  color: white;
+  opacity: 0.7; }
+
+::-moz-placeholder {
+  /* 파이어폭스 19–50 */
+  color: white;
+  opacity: 0.7; }
+
+:-ms-input-placeholder {
+  /* 인터넷 익스플로러 10+ */
+  color: white;
+  opacity: 0.7; }
+
+::placeholder {
+  /* 파이어폭스 51+, 크롬 57+ */
+  color: white;
+  opacity: 0.7; }
+
+.container-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 320px;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none; }
+  @media (max-width: 320px) {
+    .container-wrapper {
+      width: 320px; } }
+  @media (max-width: 360px) {
+    .container-wrapper {
+      width: 360px; } }
+  @media (max-width: 375px) {
+    .container-wrapper {
+      width: 375px; } }
+  @media (max-width: 411px) {
+    .container-wrapper {
+      width: 411px; } }
+
+.login {
+  width: 320px; }
+  @media (max-width: 320px) {
+    .login {
+      width: 320px; } }
+  @media (max-width: 360px) {
+    .login {
+      width: 360px; } }
+  @media (max-width: 375px) {
+    .login {
+      width: 375px; } }
+  @media (max-width: 411px) {
+    .login {
+      width: 411px; } }
+  .login .background {
+    position: fixed;
+    width: inherit; }
+  .login .container {
+    width: inherit;
+    height: 100%;
+    position: fixed;
+    text-align: center; }
+  .login input {
+    margin-top: 324px;
+    width: 251px;
+    height: 40px;
+    background: #7F66F2;
+    color: white;
+    border: solid 1px white;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px; }
+  .login button {
+    width: 251px;
+    height: 40px;
+    background: #F4F3FC;
+    color: #7150F5;
+    font-weight: bold;
+    font-size: 12px;
+    border: solid 1px white;
+    border-radius: 25px;
+    margin-top: 8px; }
+  .login p {
+    font-size: 8px;
+    color: white;
+    margin-top: 120px;
+    opacity: 0.7; }
