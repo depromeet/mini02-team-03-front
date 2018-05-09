@@ -1,8 +1,90 @@
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin: 0; }
 
 #root {
   height: inherit;
   width: inherit; }
+
+* {
+  font-family: 'Spoqa Han Sans'; }
+
+::-webkit-input-placeholder {
+  /* 크롬 4–56 */
+  color: white;
+  opacity: 0.7; }
+
+:-moz-placeholder {
+  /* 파이어폭스 4–18 */
+  color: white;
+  opacity: 0.7; }
+
+::-moz-placeholder {
+  /* 파이어폭스 19–50 */
+  color: white;
+  opacity: 0.7; }
+
+:-ms-input-placeholder {
+  /* 인터넷 익스플로러 10+ */
+  color: white;
+  opacity: 0.7; }
+
+::placeholder {
+  /* 파이어폭스 51+, 크롬 57+ */
+  color: white;
+  opacity: 0.7; }
+
+.login {
+  width: 320px; }
+  @media (min-width: 320px) {
+    .login {
+      width: 320px; } }
+  @media (min-width: 360px) {
+    .login {
+      width: 360px; } }
+  @media (min-width: 375px) {
+    .login {
+      width: 375px; } }
+  @media (min-width: 411px) {
+    .login {
+      width: 411px; } }
+  @media (min-width: 568px) {
+    .login {
+      width: 568px; } }
+  .login .background {
+    position: fixed;
+    width: inherit; }
+  .login .container {
+    width: inherit;
+    height: 100%;
+    position: fixed;
+    text-align: center; }
+  .login input {
+    margin-top: 324px;
+    width: 251px;
+    height: 40px;
+    background: #7F66F2;
+    color: white;
+    border: solid 1px white;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px; }
+  .login button {
+    width: 251px;
+    height: 40px;
+    background: #F4F3FC;
+    color: #7150F5;
+    font-weight: bold;
+    font-size: 12px;
+    border: solid 1px white;
+    border-radius: 25px;
+    margin-top: 8px; }
+  .login p {
+    font-size: 8px;
+    color: white;
+    margin-top: 120px;
+    opacity: 0.7; }
