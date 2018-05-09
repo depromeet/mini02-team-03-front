@@ -1,9 +1,23 @@
 @import "theme";
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: inherit;
+  width: inherit;
+}
+
 $iphone-5: 320px;
 $galaxy-5: 360px;
 $iphone-6: 375px;
 $pixel-2: 411px;
+$landscape: 568px;
+
 $content-max-width: 23rem;
 
 * {
@@ -35,51 +49,27 @@ $content-max-width: 23rem;
   opacity: 0.7;
 }
 
-.container-wrapper {
-  position: fixed;
-  height: 100%;
-  width: $iphone-5;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  pointer-events: none;
-
-  @media (max-width: $iphone-5) {
-    width: $iphone-5;
-  }
-
-  @media (max-width: $galaxy-5) {
-    width: $galaxy-5;
-  }
-
-  @media (max-width: $iphone-6) {
-    width: $iphone-6;
-  }
-
-  @media (max-width: $pixel-2) {
-    width: $pixel-2;
-  }
-}
-
 .login {
   width: $iphone-5;
 
-  @media (max-width: $iphone-5) {
+  @media (min-width: $iphone-5) {
     width: $iphone-5;
   }
 
-  @media (max-width: $galaxy-5) {
+  @media (min-width: $galaxy-5) {
     width: $galaxy-5;
   }
 
-  @media (max-width: $iphone-6) {
+  @media (min-width: $iphone-6) {
     width: $iphone-6;
   }
 
-  @media (max-width: $pixel-2) {
+  @media (min-width: $pixel-2) {
     width: $pixel-2;
+  }
+
+  @media (min-width: $landscape) {
+    width: $landscape;
   }
 
   .background {

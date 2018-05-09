@@ -6,9 +6,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container-wrapper">
-          <Route exact path="/" component={LoginPage} />
-        </div>
+        <Route exact path="/" component={LoginPage} />
       </Fragment>
     );
   }
