@@ -1,5 +1,55 @@
 @charset "UTF-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+.study-card {
+  margin-top: 5rem;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  text-align: center;
+  position: fixed; }
+  .study-card .card-bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1; }
+  .study-card .content {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    .study-card .content .home-icon {
+      margin-top: 1rem; }
+    .study-card .content .study-img {
+      display: block;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5rem; }
+    .study-card .content .title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 1.7rem;
+      margin-top: 1rem;
+      display: block;
+      color: #7150F5;
+      line-height: 1.3em; }
+    .study-card .content .description {
+      text-align: left;
+      font-size: 12px;
+      margin-left: 1.7rem;
+      color: #858585;
+      word-break: break-all;
+      line-height: 1.3em;
+      margin-right: 1.7rem; }
+
 html,
 body {
   width: 100%;
@@ -88,3 +138,38 @@ body {
     color: white;
     margin-top: 120px;
     opacity: 0.7; }
+
+.study-page {
+  width: 100%;
+  height: 100%;
+  background: #7157F1;
+  text-align: center; }
+  .study-page .weekly-title {
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    left: 0;
+    right: 0; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }

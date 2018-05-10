@@ -1,1 +1,64 @@
 @import "theme";
+
+.study-card {
+  margin-top: 5rem;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  text-align: center;
+  position: fixed;
+
+  .card-bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+    z-index: -1;
+  }
+
+  .content {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    .home-icon {
+      margin-top: 1rem;
+    }
+
+    .study-img {
+      display: block;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5rem;
+    }
+
+    .title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 1.7rem;
+      margin-top: 1rem;
+      display: block;
+      color: $color-purpleish-blue;
+      line-height: 1.3em;
+    }
+
+    .description {
+      text-align: left;
+      font-size: 12px;
+      margin-left: 1.7rem;
+      color: #858585;
+      word-break: break-all;
+      line-height: 1.3em;
+      margin-right: 1.7rem;
+    }
+  }
+}
