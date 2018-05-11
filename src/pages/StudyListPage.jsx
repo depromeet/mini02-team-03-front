@@ -10,10 +10,9 @@ class StudyListPage extends Component {
   render() {
     const params = {
       // centeredSlides: true,
-      spaceBetween: -90,
-
-      mousewheel: true,
-      slidesPerView: 1.005,
+      //spaceBetween: -90,
+      //slidesPerView: 1.005,
+      slidesPerView: 1,
     };
 
     return (

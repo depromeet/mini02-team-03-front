@@ -9,7 +9,7 @@ const AttendRadioBox = props => (
     className="attend-radio-box"
   >
     <input
-      type="radio"
+      type="checkbox"
       id={props.group}
       name={props.group}
       className="test"

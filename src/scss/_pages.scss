@@ -125,9 +125,8 @@ $content-max-width: 23rem;
   .weekly-title {
     position: fixed;
     color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 1.5rem;
+    font-size: 23px;
+    margin-top: 1.2rem;
     left: 0;
     right: 0;
   }
@@ -141,6 +140,7 @@ $content-max-width: 23rem;
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  overflow-y: scroll !important;
 
   /* Center slide text vertically */
   display: -webkit-box;
