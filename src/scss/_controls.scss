@@ -107,3 +107,49 @@
     }
   }
 }
+
+.img-radio-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+
+  .box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .on-img {
+    display: none;
+  }
+
+  .off-img {
+    display: inline;
+  }
+
+  input {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 0;
+
+    &:checked ~ .box .on-img {
+      display: inline;
+    }
+
+    &:checked ~ .box .off-img {
+      display: none;
+    }
+  }
+}
