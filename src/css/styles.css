@@ -93,6 +93,46 @@
     font-weight: bold;
     color: #7150F5; }
 
+.weekly-attend-list {
+  width: 100%;
+  height: 100%; }
+  .weekly-attend-list .weekly-title {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin-top: 4.9rem; }
+  .weekly-attend-list ol {
+    margin: 0;
+    padding: 2rem;
+    display: block; }
+
+.weekly-attend-item {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: block; }
+  .weekly-attend-item:after {
+    display: block;
+    content: '';
+    clear: both; }
+  .weekly-attend-item .name {
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    float: left; }
+  .weekly-attend-item .guest-icon {
+    font-size: 8px;
+    background: white;
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+    margin-left: 0.5rem;
+    margin-top: 0.32rem;
+    color: #7150F5; }
+  .weekly-attend-item .attend-icon {
+    display: inline-block;
+    float: right; }
+
 .attend-radio-box {
   position: relative;
   display: inline-block;
@@ -263,6 +303,24 @@ body {
     margin-top: 1.2rem;
     left: 0;
     right: 0; }
+
+.attend-list-page {
+  width: 100%;
+  height: 100%;
+  background: #7157F1;
+  text-align: center; }
+  .attend-list-page .title {
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 1.2rem;
+    left: 0;
+    right: 0; }
+  .attend-list-page .close-button {
+    position: fixed;
+    margin-top: 1.7rem;
+    left: 1.3rem; }
 
 .swiper-container {
   width: 100%;
