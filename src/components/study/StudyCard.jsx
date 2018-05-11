@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import AttendRadioBox from '../controls/AttendRadioBox';
+import MyStudyRadioBox from '../controls/MyStudyRadioBox';
 import StudyDetailBlock from './StudyDetailBlock';
 import cardBgImg from '../../resources/bg-card.svg';
 import homeIcon from '../../resources/icons/ic-home-on.svg';
@@ -11,7 +12,7 @@ class StudyCard extends Component {
     return (
       <div className="study-card">
         <div className="content">
-          <img src={homeIcon} alt="home" className="home-icon" />
+          <MyStudyRadioBox cusStyle={{ 'margin-top': '1rem' }}group="mystudy" />
           <img src={studyImg} alt="study-img" className="study-img" />
           <span className="title">{this.props.title}</span>
           <p className="description">{this.props.description}</p>

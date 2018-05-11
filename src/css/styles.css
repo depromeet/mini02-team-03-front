@@ -138,6 +138,39 @@
       color: #7150F5;
       opacity: 1; }
 
+.my-study-radio-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden; }
+  .my-study-radio-box .box {
+    width: 100%;
+    text-align: center; }
+  .my-study-radio-box .on-img {
+    display: none; }
+  .my-study-radio-box .off-img {
+    display: inline; }
+  .my-study-radio-box input {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 0; }
+    .my-study-radio-box input:checked ~ .box .on-img {
+      display: inline; }
+    .my-study-radio-box input:checked ~ .box .off-img {
+      display: none; }
+
 html,
 body {
   width: 100%;

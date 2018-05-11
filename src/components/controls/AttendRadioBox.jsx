@@ -12,7 +12,6 @@ const AttendRadioBox = props => (
       type="checkbox"
       id={props.group}
       name={props.group}
-      className="test"
     />
     <div className="box">
       <span className="text">{props.text}</span>

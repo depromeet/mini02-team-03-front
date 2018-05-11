@@ -24,12 +24,12 @@ class StudyDetailBlock extends Component {
                       this.props.attendNames.map(name => (
                         <span>{name}</span>
                       ))
-                    }
+                  }
                   {
                       this.props.notAttendNames.map(name => (
                         <span className="not-attend-name">{name}</span>
                       ))
-                    }
+                  }
                 </div>
               </div> : null
           }
@@ -43,7 +43,7 @@ class StudyDetailBlock extends Component {
                     this.props.guestNames.map(name => (
                       <span>{name}</span>
                     ))
-                  }
+                }
               </div>
             </div> : null
         }
