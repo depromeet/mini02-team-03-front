@@ -12,14 +12,6 @@ body {
   width: inherit;
 }
 
-$iphone-5: 320px;
-$galaxy-5: 360px;
-$iphone-6: 375px;
-$pixel-2: 411px;
-$landscape: 568px;
-
-$content-max-width: 23rem;
-
 * {
   font-family: 'Spoqa Han Sans';
 }
@@ -50,27 +42,7 @@ $content-max-width: 23rem;
 }
 
 .login {
-  width: $iphone-5;
-
-  @media (min-width: $iphone-5) {
-    width: $iphone-5;
-  }
-
-  @media (min-width: $galaxy-5) {
-    width: $galaxy-5;
-  }
-
-  @media (min-width: $iphone-6) {
-    width: $iphone-6;
-  }
-
-  @media (min-width: $pixel-2) {
-    width: $pixel-2;
-  }
-
-  @media (min-width: $landscape) {
-    width: $landscape;
-  }
+  width: 100%;
 
   .background {
     position: fixed;
@@ -85,6 +57,9 @@ $content-max-width: 23rem;
   }
 
   input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 324px;
     width: 251px;
     height: 40px;
@@ -97,6 +72,9 @@ $content-max-width: 23rem;
   }
 
   button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 251px;
     height: 40px;
     background: $color-pale-grey;
@@ -129,6 +107,29 @@ $content-max-width: 23rem;
     margin-top: 1.2rem;
     left: 0;
     right: 0;
+  }
+}
+
+.attend-list-page {
+  width: 100%;
+  height: 100%;
+  background: $card-bg;
+  text-align: center;
+
+  .title {
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 1.2rem;
+    left: 0;
+    right: 0;
+  }
+
+  .close-button {
+    position: fixed;
+    margin-top: 1.7rem;
+    left: 1.3rem;
   }
 }
 
