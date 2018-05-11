@@ -197,3 +197,51 @@
     float: right;
   }
 }
+
+.my-attendance-item {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+  list-style: none;
+  margin-bottom: 2rem;
+  display: block;
+
+  .content {
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 12px;
+    font-weight: lighter;
+    display: inline-block;
+    float: left;
+
+    .title {
+      color: white;
+    }
+
+    .date {
+      color: white;
+      opacity: 0.5;
+    }
+
+    .guest-icon {
+      display: inline-block;
+      font-size: 8px;
+      background: white;
+      font-weight: bold;
+      padding: 0.1rem 0.4rem;
+      border-radius: 10px;
+      display: inline-block;
+      margin-left: 0.5rem;
+      color: #7150F5;
+    }
+  }
+
+  img {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+  }
+}

@@ -149,6 +149,41 @@
     display: inline-block;
     float: right; }
 
+.my-attendance-item {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: block; }
+  .my-attendance-item:after {
+    display: block;
+    content: '';
+    clear: both; }
+  .my-attendance-item .content {
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 12px;
+    font-weight: lighter;
+    display: inline-block;
+    float: left; }
+    .my-attendance-item .content .title {
+      color: white; }
+    .my-attendance-item .content .date {
+      color: white;
+      opacity: 0.5; }
+    .my-attendance-item .content .guest-icon {
+      display: inline-block;
+      font-size: 8px;
+      background: white;
+      font-weight: bold;
+      padding: 0.1rem 0.4rem;
+      border-radius: 10px;
+      display: inline-block;
+      margin-left: 0.5rem;
+      color: #7150F5; }
+  .my-attendance-item img {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 0.5rem; }
+
 .attend-radio-box {
   position: relative;
   display: inline-block;
@@ -371,6 +406,59 @@ body {
     position: fixed;
     margin-top: 1.7rem;
     left: 1.3rem; }
+
+.my-page {
+  width: 100%;
+  height: 100%;
+  background: #7157F1;
+  text-align: center;
+  overflow-y: scroll; }
+  .my-page .header {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .my-page .header .title {
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 1.2rem;
+      left: 0;
+      right: 0; }
+    .my-page .header .close-button {
+      position: absolute;
+      margin-top: 1.7rem;
+      left: 1.3rem; }
+  .my-page .study-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-top: 0.5rem;
+    line-height: 1.3em; }
+  .my-page .check-table {
+    display: table;
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 2rem; }
+    .my-page .check-table div {
+      display: table-cell;
+      text-align: center; }
+    .my-page .check-table img {
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .my-page .check-table span {
+      margin-top: 0.6rem;
+      display: block;
+      color: white; }
+  .my-page .home-img {
+    margin-top: 5.3rem; }
+  .my-page ol {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0; }
 
 .swiper-container {
   width: 100%;

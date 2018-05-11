@@ -134,6 +134,80 @@ body {
   }
 }
 
+.my-page {
+  width: 100%;
+  height: 100%;
+  background: $card-bg;
+  text-align: center;
+  overflow-y: scroll;
+
+  .header {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    .title {
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 1.2rem;
+      left: 0;
+      right: 0;
+    }
+
+    .close-button {
+      position: absolute;
+      margin-top: 1.7rem;
+      left: 1.3rem;
+    }
+  }
+
+  .study-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-top: 0.5rem;
+    line-height: 1.3em;
+  }
+
+  .check-table {
+    display: table;
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 2rem;
+
+    div {
+      display: table-cell;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    span {
+      margin-top: 0.6rem;
+      display: block;
+      color: white;
+    }
+  }
+
+  .home-img {
+    margin-top: 5.3rem;
+  }
+
+  ol {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
