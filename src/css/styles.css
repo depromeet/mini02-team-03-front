@@ -49,6 +49,57 @@
       word-break: break-all;
       line-height: 1.3em;
       margin-right: 1.7rem; }
+  .study-card .check-block {
+    position: absolute;
+    width: 100%;
+    margin-top: 25.5rem; }
+    .study-card .check-block .right-radio {
+      margin-left: 1.7rem; }
+
+.attend-radio-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden; }
+  .attend-radio-box .box {
+    width: 100%;
+    text-align: center; }
+  .attend-radio-box span {
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1.1rem;
+    opacity: 0.38; }
+  .attend-radio-box .on-img {
+    display: none; }
+  .attend-radio-box .off-img {
+    display: inline; }
+  .attend-radio-box input {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 0; }
+    .attend-radio-box input:checked ~ .box .on-img {
+      display: inline; }
+    .attend-radio-box input:checked ~ .box .off-img {
+      display: none; }
+    .attend-radio-box input:checked ~ .box span {
+      color: #7150F5;
+      opacity: 1; }
 
 html,
 body {
