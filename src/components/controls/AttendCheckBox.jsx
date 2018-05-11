@@ -2,7 +2,7 @@ import React from 'react';
 import onImg from '../../resources/controls/btn-atd-on.svg';
 import offImg from '../../resources/controls/btn-atd-off.svg';
 
-const AttendRadioBox = props => (
+const AttendCheckBox = props => (
   <label
     htmlFor="AttendRadioBox"
     style={props.cusStyle}
@@ -21,4 +21,4 @@ const AttendRadioBox = props => (
   </label>
 );
 
-export default AttendRadioBox;
+export default AttendCheckBox;

@@ -1,11 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import AttendRadioBox from '../controls/AttendRadioBox';
+import AttendCheckBox from '../controls/AttendCheckBox';
 import MyStudyRadioBox from '../controls/MyStudyRadioBox';
 import StudyDetailBlock from './StudyDetailBlock';
 import cardBgImg from '../../resources/bg-card.svg';
-import homeIcon from '../../resources/icons/ic-home-on.svg';
 import studyImg from '../../resources/img-1.svg';
-
 
 class StudyCard extends Component {
   render() {
@@ -19,7 +17,7 @@ class StudyCard extends Component {
         </div>
         <img src={cardBgImg} alt="bg" className="card-bg-img" />
         <div className="check-block">
-          <AttendRadioBox text={<Fragment>게스트<br />참석</Fragment>} group="attendance" />
+          <AttendCheckBox text={<Fragment>게스트<br />참석</Fragment>} group="attendance" />
         </div>
         <StudyDetailBlock
           leaderName="장선혁"

@@ -210,22 +210,7 @@ body {
   opacity: 0.7; }
 
 .login {
-  width: 320px; }
-  @media (min-width: 320px) {
-    .login {
-      width: 320px; } }
-  @media (min-width: 360px) {
-    .login {
-      width: 360px; } }
-  @media (min-width: 375px) {
-    .login {
-      width: 375px; } }
-  @media (min-width: 411px) {
-    .login {
-      width: 411px; } }
-  @media (min-width: 568px) {
-    .login {
-      width: 568px; } }
+  width: 100%; }
   .login .background {
     position: fixed;
     width: inherit; }
@@ -235,6 +220,9 @@ body {
     position: fixed;
     text-align: center; }
   .login input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 324px;
     width: 251px;
     height: 40px;
@@ -245,6 +233,9 @@ body {
     text-align: center;
     font-size: 12px; }
   .login button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 251px;
     height: 40px;
     background: #F4F3FC;
