@@ -1,5 +1,176 @@
 @charset "UTF-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+.study-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center; }
+  .study-card .card-bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    display: block;
+    margin-top: 4.5rem; }
+  .study-card .content {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5rem; }
+    .study-card .content .home-icon {
+      margin-top: 1rem; }
+    .study-card .content .study-img {
+      display: block;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5rem; }
+    .study-card .content .title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 1.7rem;
+      margin-top: 1rem;
+      display: block;
+      color: #7150F5;
+      line-height: 1.3em; }
+    .study-card .content .description {
+      text-align: left;
+      font-size: 12px;
+      margin-left: 1.7rem;
+      color: #858585;
+      word-break: break-all;
+      line-height: 1.3em;
+      margin-right: 1.7rem; }
+  .study-card .check-block {
+    width: 100%;
+    margin-top: 30.5rem; }
+
+.study-detail-block {
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+  width: 100%; }
+  .study-detail-block .attend-table {
+    display: table;
+    font-size: 12px;
+    color: white;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 1.4rem;
+    margin-right: 2.3rem;
+    margin-bottom: 1rem; }
+    .study-detail-block .attend-table div {
+      display: table-row;
+      padding-bottom: 0.5rem; }
+      .study-detail-block .attend-table div img {
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+        display: table-cell; }
+      .study-detail-block .attend-table div div {
+        display: table-cell; }
+        .study-detail-block .attend-table div div.title {
+          width: 3rem; }
+        .study-detail-block .attend-table div div span {
+          margin-right: 0.5rem; }
+          .study-detail-block .attend-table div div span.not-attend-name {
+            opacity: 0.38; }
+  .study-detail-block button {
+    width: 85%;
+    height: 3rem;
+    background: white;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7150F5; }
+
+.attend-radio-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden; }
+  .attend-radio-box .box {
+    width: 100%;
+    text-align: center; }
+  .attend-radio-box span {
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 0.7rem;
+    opacity: 0.38; }
+  .attend-radio-box .on-img {
+    display: none; }
+  .attend-radio-box .off-img {
+    display: inline; }
+  .attend-radio-box input {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 0; }
+    .attend-radio-box input:checked ~ .box .on-img {
+      display: inline; }
+    .attend-radio-box input:checked ~ .box .off-img {
+      display: none; }
+    .attend-radio-box input:checked ~ .box span {
+      color: #7150F5;
+      opacity: 1; }
+
+.my-study-radio-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden; }
+  .my-study-radio-box .box {
+    width: 100%;
+    text-align: center; }
+  .my-study-radio-box .on-img {
+    display: none; }
+  .my-study-radio-box .off-img {
+    display: inline; }
+  .my-study-radio-box input {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 0; }
+    .my-study-radio-box input:checked ~ .box .on-img {
+      display: inline; }
+    .my-study-radio-box input:checked ~ .box .off-img {
+      display: none; }
+
 html,
 body {
   width: 100%;
@@ -88,3 +259,38 @@ body {
     color: white;
     margin-top: 120px;
     opacity: 0.7; }
+
+.study-page {
+  width: 100%;
+  height: 100%;
+  background: #7157F1;
+  text-align: center; }
+  .study-page .weekly-title {
+    position: fixed;
+    color: white;
+    font-size: 23px;
+    margin-top: 1.2rem;
+    left: 0;
+    right: 0; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  overflow-y: scroll !important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
