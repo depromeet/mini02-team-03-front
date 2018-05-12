@@ -18,7 +18,6 @@
   .study-card .content {
     position: absolute;
     width: 15rem;
-    height: 100%;
     text-align: center;
     left: 0;
     right: 0;
@@ -33,24 +32,25 @@
       right: 0;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 0.5rem; }
+      margin-top: 0.7rem; }
     .study-card .content .title {
       text-align: left;
       font-size: 24px;
       font-weight: bold;
-      margin-left: 1.7rem;
-      margin-top: 1rem;
+      margin-left: 1.3rem;
+      margin-top: 14px;
       display: block;
       color: #7150F5;
-      line-height: 1.3em; }
+      line-height: 29px; }
     .study-card .content .description {
       text-align: left;
       font-size: 12px;
-      margin-left: 1.7rem;
+      margin-left: 1.3rem;
       color: #858585;
       word-break: break-all;
-      line-height: 1.3em;
-      margin-right: 1.7rem; }
+      line-height: 18px;
+      margin-right: 1.7rem;
+      font-weight: 300; }
   .study-card .check-block {
     width: 100%;
     margin-top: 30.5rem; }
@@ -73,7 +73,7 @@
     display: table;
     font-size: 12px;
     color: white;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: left;
     margin-left: 1.4rem;
     margin-right: 2.3rem;
@@ -90,7 +90,7 @@
         .study-detail-block .attend-table div div.title {
           width: 3rem; }
         .study-detail-block .attend-table div div span {
-          margin-right: 0.5rem; }
+          margin-right: 0.7rem; }
           .study-detail-block .attend-table div div span.not-attend-name {
             opacity: 0.38; }
   .study-detail-block button {
@@ -101,7 +101,8 @@
     border-radius: 24px;
     font-size: 16px;
     font-weight: bold;
-    color: #7150F5; }
+    color: #7150F5;
+    margin-top: 0.5rem; }
 
 .weekly-attend-list {
   width: 100%;
@@ -109,6 +110,7 @@
   .weekly-attend-list .weekly-title {
     display: block;
     font-size: 16px;
+    font-weight: bold;
     color: white;
     margin-top: 4.9rem; }
   .weekly-attend-list ol {
@@ -161,7 +163,7 @@
     text-align: left;
     margin-left: 1.5rem;
     font-size: 12px;
-    font-weight: lighter;
+    font-weight: 300;
     display: inline-block;
     float: left; }
     .my-attendance-item .content .title {
@@ -344,24 +346,27 @@ body {
     height: 100%;
     position: fixed;
     text-align: center; }
+    .login .container img {
+      margin-top: 7rem; }
   .login input {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 324px;
-    width: 251px;
+    margin-top: 5.5rem;
+    width: 16rem;
     height: 40px;
     background: #7F66F2;
     color: white;
     border: solid 1px white;
     border-radius: 25px;
     text-align: center;
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 0; }
   .login button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 251px;
+    width: 16rem;
     height: 40px;
     background: #F4F3FC;
     color: #7150F5;
@@ -369,12 +374,16 @@ body {
     font-size: 12px;
     border: solid 1px white;
     border-radius: 25px;
-    margin-top: 8px; }
+    margin-top: 1rem;
+    padding: 0; }
   .login p {
     font-size: 8px;
     color: white;
-    margin-top: 120px;
-    opacity: 0.7; }
+    opacity: 0.7;
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0; }
 
 .study-page {
   width: 100%;
@@ -386,8 +395,14 @@ body {
     color: white;
     font-size: 23px;
     margin-top: 1.2rem;
+    font-weight: bold;
     left: 0;
     right: 0; }
+  .study-page .my-page-icon {
+    margin-top: 1.6rem;
+    right: 4.5rem;
+    position: fixed;
+    z-index: 10; }
 
 .attend-list-page {
   width: 100%;
@@ -405,7 +420,8 @@ body {
   .attend-list-page .close-button {
     position: fixed;
     margin-top: 1.7rem;
-    left: 1.3rem; }
+    left: 1.3rem;
+    z-index: 10; }
 
 .my-page {
   width: 100%;
@@ -428,7 +444,8 @@ body {
     .my-page .header .close-button {
       position: absolute;
       margin-top: 1.7rem;
-      left: 1.3rem; }
+      left: 1.3rem;
+      z-index: 10; }
   .my-page .study-title {
     font-size: 16px;
     font-weight: bold;
@@ -459,6 +476,15 @@ body {
     width: 100%;
     margin-top: 2rem;
     padding: 0; }
+  .my-page .logout-btn {
+    color: white;
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: lighter;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+    background: none;
+    border: none; }
 
 .swiper-container {
   width: 100%;

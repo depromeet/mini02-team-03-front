@@ -2,45 +2,53 @@ import React, { Component } from 'react';
 import divderImg from '../../resources/icons/divider.svg';
 
 class StudyDetailBlock extends Component {
+  constructor(props) {
+    super(props);
+
+    this.moveToAttendListPage = this.moveToAttendListPage.bind(this);
+  }
+
   render() {
     return (
       <div className="study-detail-block">
         <div className="attend-table">
           {
-            this.props.leaderName ?
+            this.props.leader ?
               <div>
                 <div className="title">스터디 장</div>
                 <img src={divderImg} alt="" />
-                <div>{this.props.leaderName}</div>
+                <div>{this.props.leader}</div>
               </div> : null
           }
           {
-            this.props.attendNames ?
+            this.props.attendMembers ?
               <div>
                 <div className="title">스터디 원</div>
                 <img src={divderImg} alt="" />
                 <div>
                   {
-                      this.props.attendNames.map(name => (
+                    this.props.attendMembers ?
+                      this.props.attendMembers.map(name => (
                         <span>{name}</span>
-                      ))
+                      )) : null
                   }
                   {
-                      this.props.notAttendNames.map(name => (
+                    this.props.notAttendMembers ?
+                      this.props.notAttendMembers.map(name => (
                         <span className="not-attend-name">{name}</span>
-                      ))
+                      )) : null
                   }
                 </div>
               </div> : null
           }
           {
-          this.props.guestNames ?
+          this.props.guestMembers ?
             <div>
               <div className="title">게스트</div>
               <img src={divderImg} alt="" />
               <div>
                 {
-                    this.props.guestNames.map(name => (
+                    this.props.guestMembers.map(name => (
                       <span>{name}</span>
                     ))
                 }
@@ -48,9 +56,17 @@ class StudyDetailBlock extends Component {
             </div> : null
         }
         </div>
-        <button>출석표 보기</button>
+        <button onClick={this.moveToAttendListPage}>출석표 보기</button>
       </div>
     );
+  }
+
+  moveToAttendListPage = () => {
+    if (this.props.isLeader) {
+      this.props.history.push('/attendlist/admin');
+    } else {
+      this.props.history.push('/attendlist');
+    }
   }
 }
 

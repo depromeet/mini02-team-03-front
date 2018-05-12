@@ -3,15 +3,14 @@ import AttendCheckBox from '../controls/AttendCheckBox';
 import MyStudyRadioBox from '../controls/MyStudyRadioBox';
 import StudyDetailBlock from './StudyDetailBlock';
 import cardBgImg from '../../resources/bg-card.svg';
-import studyImg from '../../resources/img-1.svg';
 
 class StudyCard extends Component {
   render() {
     return (
       <div className="study-card">
         <div className="content">
-          <MyStudyRadioBox cusStyle={{ 'margin-top': '1rem' }}group="mystudy" />
-          <img src={studyImg} alt="study-img" className="study-img" />
+          <MyStudyRadioBox cusStyle={{ 'margin-top': '1rem' }} group="mystudy" />
+          <img style={this.props.imgBottomMargin} src={this.props.imgSrc} alt="study-img" className="study-img" />
           <span className="title">{this.props.title}</span>
           <p className="description">{this.props.description}</p>
         </div>
@@ -20,10 +19,12 @@ class StudyCard extends Component {
           <AttendCheckBox text={<Fragment>게스트<br />참석</Fragment>} group="attendance" />
         </div>
         <StudyDetailBlock
-          leaderName="장선혁"
-          attendNames={['오기환', '조영은', '오기환', '조영은', '오기환', '조영은', '오기환', '조영은', '오기환', '조영은']}
-          notAttendNames={['마현지']}
-          guestNames={['김태성']}
+          leader={this.props.leader}
+          attendMembers={this.props.attendMembers}
+          notAttendMembers={this.props.notAttendMembers}
+          guestMembers={this.props.guestMembers}
+          history={this.props.history}
+          isLeader={this.props.isLeader}
         />
       </div>
     );

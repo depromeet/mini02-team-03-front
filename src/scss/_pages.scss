@@ -55,14 +55,18 @@ body {
     height: 100%;
     position: fixed;
     text-align: center;
+
+    img {
+      margin-top: 7rem;
+    }
   }
 
   input {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 324px;
-    width: 251px;
+    margin-top: 5.5rem;
+    width: 16rem;
     height: 40px;
     background: $color-light-purple;
     color: white;
@@ -70,13 +74,14 @@ body {
     border-radius: 25px;
     text-align: center;
     font-size: 12px;
+    padding: 0;
   }
 
   button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 251px;
+    width: 16rem;
     height: 40px;
     background: $color-pale-grey;
     color: $color-purpleish-blue;
@@ -84,14 +89,18 @@ body {
     font-size: 12px;
     border: solid 1px white;
     border-radius: 25px;
-    margin-top: 8px;
+    margin-top: 1rem;
+    padding: 0;
   }
 
   p {
     font-size: 8px;
     color: white;
-    margin-top: 120px;
     opacity: 0.7;
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -106,8 +115,16 @@ body {
     color: white;
     font-size: 23px;
     margin-top: 1.2rem;
+    font-weight: bold;
     left: 0;
     right: 0;
+  }
+
+  .my-page-icon {
+    margin-top: 1.6rem;
+    right: 4.5rem;
+    position: fixed;
+    z-index: 10;
   }
 }
 
@@ -131,6 +148,7 @@ body {
     position: fixed;
     margin-top: 1.7rem;
     left: 1.3rem;
+    z-index: 10;
   }
 }
 
@@ -160,6 +178,7 @@ body {
       position: absolute;
       margin-top: 1.7rem;
       left: 1.3rem;
+      z-index: 10;
     }
   }
 
@@ -205,6 +224,17 @@ body {
     width: 100%;
     margin-top: 2rem;
     padding: 0;
+  }
+
+  .logout-btn {
+    color: white;
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: lighter;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+    background: none;
+    border: none;
   }
 }
 

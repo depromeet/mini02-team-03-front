@@ -4,6 +4,12 @@ import WeeklyAttendAdminList from '../components/attend/WeeklyAttendAdminList';
 import closeImg from '../resources/icons/close.svg';
 
 class AttendListAdminPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.moveToStudyPage = this.moveToStudyPage.bind(this);
+  }
+
   render() {
     const params = {
       slidesPerView: 1,
@@ -12,7 +18,7 @@ class AttendListAdminPage extends Component {
     return (
       <div className="attend-list-page">
         <span className="title">출석표</span>
-        <img src={closeImg} className="close-button" alt="close" />
+        <img src={closeImg} onClick={this.moveToStudyPage} className="close-button" alt="close" />
         <Swiper {...params}>
           <div>
             <WeeklyAttendAdminList weeklyTitle="5월 2주차" />
@@ -26,6 +32,10 @@ class AttendListAdminPage extends Component {
         </Swiper>
       </div>
     );
+  }
+
+  moveToStudyPage = () => {
+    this.props.history.push('/study');
   }
 }
 
